@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #f9f9f9; /* Matching background color */
+  color: #333; /* Matching text color */
+  padding: 20px; /* Increased padding for consistency */
+  text-align: center;
+  border-radius: 8px; /* Added border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Matching box shadow */
+  margin-bottom: 20px; /* Margin to separate from content */
+}
+
+  header h1 {
+    font-size: 1.8em;
+    margin: 0 0 10px 0; /* Adjusted margin */
+  }
+
+#exchange-rates {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+  #exchange-rates .rate {
+    background-color: #ffffff; /* Background color for rates */
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for rates */
+  }
+
+  #exchange-rates p {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  #exchange-rates span {
+    font-weight: bold;
+    color: #4caf50; /* Green color for rates */
+  }
+
+#timer {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #555; /* Slightly lighter color for the timer */
+}
+
+.spinner-container {
+  height: 90px; /* Adjusted height for spinner */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.hidden-spinner {
+  visibility: hidden;
+}
+
+mat-progress-spinner {
+  width: 40px; /* Consistent size with other elements */
+  height: 40px;
+}

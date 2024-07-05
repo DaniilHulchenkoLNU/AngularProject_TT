@@ -1,0 +1,21 @@
+<div class="converter">
+  <div class="currency">
+    <input type="number" [(ngModel)]="amount1" (input)="handleAmount1Change($event)" />
+    <select [(ngModel)]="currency1" (change)="handleCurrency1Change($event)">
+      <option value="USD">USD</option>
+      <option value="UAH">UAH</option>
+      <option value="EUR">EUR</option>
+    </select>
+  </div>
+
+  <button class="swap-button" (click)="swapCurrencies()">&#8645;</button>
+
+  <div class="currency">
+    <input type="number" [(ngModel)]="amount2" (input)="handleAmount2Change($event)" />
+    <select [(ngModel)]="currency2" (change)="handleCurrency2Change($event)">
+      <option value="USD">USD</option>
+      <option value="UAH">UAH</option>
+      <option value="EUR">EUR</option>
+    </select>
+  </div>
+</div>

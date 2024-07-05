@@ -1,0 +1,117 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e8f0fe;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.converter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #f3f3f3, #e2e2e2);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.currency {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .currency input,
+  .currency select {
+    width: 180px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+    .currency input:focus,
+    .currency select:focus {
+      outline: none;
+      box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    }
+
+    .currency input::placeholder {
+      color: #bbb;
+    }
+
+  .currency select {
+    background: #fff;
+    color: #333;
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 8px 10px;
+  }
+
+    .currency select::-ms-expand {
+      display: none;
+    }
+
+
+.converter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.currency {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .currency input, .currency select {
+    width: 120px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+  }
+
+    .currency input:focus, .currency select:focus {
+      outline: none;
+      border-color: #4caf50;
+      box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    }
+
+.swap-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  transform: rotate(90deg);
+}
+
+  .swap-button:hover {
+    background-color: #45a049;
+  }

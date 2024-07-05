@@ -1,0 +1,20 @@
+<header>
+  <h1>Currency Converter</h1>
+  <div id="exchange-rates">
+    <div class="rate">
+      <p>USD to UAH: <span>{{ usdToUah }}</span></p>
+    </div>
+    <div class="rate">
+      <p>USD to EUR: <span>{{ eurToUah }}</span></p>
+    </div>
+  </div>
+  <div id="timer">
+    <p>Next update in: {{ countdown }} seconds</p>
+  </div>
+  <div class="spinner-container">
+    <mat-progress-spinner [ngClass]="{ 'hidden-spinner': countdown >= 10 }"
+                          mode="determinate"
+                          [value]="(10 - countdown) * 10">
+    </mat-progress-spinner>
+  </div>
+</header>
